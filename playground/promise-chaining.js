@@ -1,5 +1,5 @@
-require("../src/db/mongoose");
-const User = require("../src/models/user");
+require('../src/db/mongoose');
+const User = require('../src/models/user');
 
 // User.findByIdAndUpdate('6067a1fc0f85104128eb5f50', { age: 1}).then((user) => {
 //     console.log(user)
@@ -16,7 +16,7 @@ const updateAgeAndCount = async (id, age) => {
     return count;
 };
 
-updateAgeAndCount("6067a1fc0f85104128eb5f50", 2)
+updateAgeAndCount('6067a1fc0f85104128eb5f50', 2)
     .then((count) => {
         console.log(count);
     })
